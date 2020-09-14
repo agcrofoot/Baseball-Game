@@ -7,9 +7,16 @@ namespace _221StarterCode
         public string Name{get; set;}
         public string Team{get; set;}
         public string Throws{get; set;}
-        public virtual void Pitch()
+
+        public IPitch pitchBehavior;
+
+        public void SetPitchBehavior(IPitch value)
         {
-            Console.WriteLine("The pitch has been thrown.");
+            pitchBehavior = value;
+        }
+        public Pitcher()
+        {
+            SetPitchBehavior(new Fastball());
         }
     }
 }

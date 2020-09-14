@@ -1,7 +1,14 @@
-namespace 321_lab1_agcrofoot
+using System;
+
+namespace _221StarterCode
 {
-    public class Lefty
+    public class Lefty : Pitcher
     {
-        
+        public Lefty()
+        {
+            Throws = "Left";
+            SetPitchBehavior(new Curveball());
+        }
+
     }
 }
