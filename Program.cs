@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace _221StarterCode
 {
@@ -6,7 +8,8 @@ namespace _221StarterCode
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Pitcher pitch1 = new Pitcher();
+            pitch1.Pitch();
         }
     }
 }
